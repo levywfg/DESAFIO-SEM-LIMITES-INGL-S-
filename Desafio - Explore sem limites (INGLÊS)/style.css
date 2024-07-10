@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: "Mulish", sans-serif;
+
+  /*Colors*/
+
+  --pink: #B52184;
+  --purple: #312D64;
+  --gradient: linear-gradient(96.21deg, #343193 0%, #302c63 99.68%);
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #F9F4FB;
+}
+
+#astronaut {
+  display: flex;
+  margin: auto;
+  font-size: 3.2rem;
+  margin-bottom: 1.7rem;
+}
+
+#astronautdesktop {
+  display: none;
+}
+
+header h1 {
+  color: var(--pink);
+  font-weight: 900;
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+header h2 {
+  color: var(--purple);
+  text-align: center;
+}
+
+#arrow {
+  display: flex;
+  margin: 3.5rem auto 9.3rem;
+}
+
+main {
+  background: var(--gradient);
+  display: flex;
+  gap: 5.0rem;
+  flex-direction: column;
+  padding: 4.0rem;
+}
+
+.info {
+  background-color: white;
+  border-radius: 2rem;
+  padding: 2.5rem;
+}
+
+.info img {
+  margin-bottom: 3.2rem;
+}
+
+.info img:hover {
+  transform: scale(1.1);
+}
+
+.info h1 {
+  color: var(--pink);
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+
+.info p {
+  font-size: 1.6rem;
+  color: var(--purple);
+  font-weight: 600;
+  width: 26.5rem;
+}
+
+#contact-section {
+  background-color: #F9F4FB;
+  display: flex;
+  flex-direction: column;
+  padding: 6rem 4rem;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+#contact-section h1 {
+  color: var(--pink);
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 4.2rem;
+}
+
+#yourname {
+  background: url('images/person.svg') no-repeat scroll 1.4rem 1.2rem;
+}
+
+#email {
+  background: url('images/at.svg') no-repeat scroll 1.4rem 1.2rem;
+}
+
+textarea {
+  border: 1.5px solid var(--purple);
+  border-radius: 1.6rem;
+  font-family: "Mulish", sans-serif;
+  padding: 1.6rem;
+  background: #F9F4FB;
+}
+
+input {
+  border: 1.5px solid var(--purple);
+  border-radius: 1.6rem;
+  font-family: "Mulish", sans-serif;
+  padding: 1.6rem 1.6rem 1.6rem 5rem;
+}
+
+#contact-section textarea {
+  height: 12.6rem;
+}
+
+#contact-section input::placeholder {
+  color: var(--purple);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+#contact-section textarea::placeholder {
+  color: var(--purple);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+button {
+  background: var(--gradient);
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 900;
+  height: 4.5rem;
+  width: 15rem;
+  border: 0;
+  border-radius: 1.6rem;
+  margin-top: 2.4rem;
+}
+
+button:hover {
+  background: #7d7ca6;
+  cursor: pointer;
+}
+
+#stars {
+  display: none;
+}
+
+footer {
+  background: var(--gradient);
+  height: 7.8rem;
+  padding: 3.2rem 1.6rem;
+}
+
+footer p {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+
+@media (min-width: 1440px) {
+
+  header {
+      display: flex;
+      flex-direction: row-reverse;
+      padding: 0 3rem 10.3rem 10.9rem;
+      justify-content: center;
+  }
+
+  #headertext {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+
+  header h1 {
+      font-size: 5.8rem;
+      margin-top: 31.2rem;
+  }
+
+  header h2 {
+      font-size: 3.2rem;
+  }
+
+  #astronaut {
+      display: none;
+  }
+
+  #astronautdesktop {
+      display: block;
+      height: 73.2rem;
+      width: 71.9rem;
+  }
+
+  #arrow {
+      margin-top: 17.9rem;
+      margin-left: 0;
+  }
+
+  main {
+      flex-direction: row;
+      justify-content: center;
+  }
+
+  #contact-section {
+      display: flex;
+      flex-direction: row;
+      gap: 9.2rem;
+      justify-content: space-between;
+      padding: 0;
+  }
+
+  #form {
+      padding: 9.5rem 0 9.5rem 10.9rem;
+      width: 80rem;
+  }
+
+  #form h1 {
+      font-size: 4.2rem;
+      margin-bottom: 0;
+  }
+
+  #stars {
+      display: block;
+  }
+}
